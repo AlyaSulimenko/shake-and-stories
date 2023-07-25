@@ -1,66 +1,48 @@
 @import url("https://fonts.googleapis.com/css?family=Bubblegum+Sans:regular&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&display=swap");
-$fontFamily: "Open Sans";
-$fontHeadings: "Bubblegum Sans";
-$color-background-1: #e0f2ff;
-$color-background-2: #ffedfb;
-$color-background-3: #fff7ea;
-
-$color-text-heading-1: #d61e61;
-$color-tercery-lighter: #ffe9c7;
-$color-text-2: #918581; // Lighter text
-$color-primary: #ff6ec9;
-$color-primary-lighter: #fecef8;
-$color-grad-1: #fbdb89;
-$color-grad-2: #f48982;
-$color-grey-light-1: #f9f5f3; // Light background
-$color-grey-light-2: #f2efee; // Light lines
-$color-grey-light-3: #d3c7c3; // Light text (placeholder)
-$color-grey-dark-1: #615551; // Normal text
-$color-grey-dark-2: #918581; // Lighter text
-
-$gradient: linear-gradient(to right bottom, $color-grad-1, $color-grad-2);
-
-$bp-large: 78.15em; // 1250px
-$bp-medium: 61.25em; // 980px
-$bp-small: 37.5em; // 600px
-$bp-smallest: 31.25em; // 500px
 //
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-
-  @media only screen and (max-width: $bp-medium) {
-    font-size: 50%;
+body {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  @media only screen and (max-width: $tablet-medium) {
+    background-image: none;
+    background-color: $background-1;
   }
 }
-
-body {
-  font-family: $fontFamily;
-  font-weight: 400;
-  line-height: 1.6;
-  color: $color-grey-dark-1;
-  background-image: url("../img/background.jpg");
-  //background-size: cover;
-  background-repeat: repeat;
-  min-height: calc(100vh - 2 * 4vw);
-}
-
 .container {
   max-width: 120rem;
-  height: 96vh;
-  margin: 2vw auto;
-  background-color: #fff;
-  border-radius: 9px;
-  overflow: hidden;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  margin: 1vh auto;
   box-shadow: 0 2rem 6rem 0.5rem rgba(0, 0, 0, 0.3);
-
-  // @media only screen and (max-width: $bp-large) {
-  //   max-width: 100%;
-  //   margin: 0;
-  //   border-radius: 0;
-  // }
+  @media only screen and (max-width: $tablet) {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+  }
+  @media only screen and (max-width: $tablet-medium) {
+    box-shadow: none;
+  }
+  @media only screen and (max-width: $mobile) {
+    height: auto;
+  }
 }
 .content {
+  position: relative;
+  flex: 1 1 auto;
+  background-color: #fff;
   display: flex;
+  max-height: calc(98vh - 16.3rem);
+  @media only screen and (max-width: $tablet) {
+    max-height: calc(100vh - 16.3rem);
+  }
+  @media only screen and (max-width: $mobile) {
+    flex-direction: column;
+    max-height: none;
+  }
+  @media only screen and (max-width: $mobileSmall) {
+    max-height: none;
+  }
 }

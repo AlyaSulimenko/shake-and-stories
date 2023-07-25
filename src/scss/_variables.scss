@@ -1,0 +1,26 @@
+//Fonts
+$fontFamily: "Open Sans";
+$fontHeadings: "Bubblegum Sans";
+//Text colours
+$color-text-heading-1: #d61e61;
+$color-text-1: #615551; // Normal text
+$color-text-2: #918581; // Lighter text
+//Background colours
+$background-1: #fdeafa;
+$background-2: #fff7ea;
+//Colour scheme
+$color-primary: #ff6ec9;
+$color-primary-lighter: #fecef8;
+$color-secondary: #ffd03d;
+$color-secondary-lighter: #ffe9c7;
+//Screen widths
+$bp-large: 78.15em; // 1250px
+$decstopLarge: 78.15em; // 1250px
+$tablet: 75em; // 1200px
+$tablet-medium: 61.99em; //991.98px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+$mobile: 47.99em; //767.98px
+$mobileSmall: 29.99em; //479.98px
+//Different styles
+$box-shadow-basic: rgba(0, 0, 0, 0.1) 0px 0.4rem 1.2rem;

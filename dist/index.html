@@ -8,274 +8,279 @@
     href="./img/favicon-32x32.png"
     type="image/x-icon"
   />
-  <link rel="stylesheet" href="css/style.min.css" />
-  <!-- <link rel="stylesheet" href="src/sass/main.scss" /> -->
-  <script type="module" src="src/js/controller.js"></script>
+  <link rel="stylesheet" href="css/style.min.css?_v=20230725162713" />
+  <script type="module" src="src/js/controller.js?_v=20230725162713"></script>
   <title>Shake&Stories</title>
   <body>
     <div class="container">
       <header class="header">
-        <a href="#" class="header__logo"
-          ><img src="./img/logo.png" alt="Logo" class="header__logo" />
-          <h1 class="header__title heading heading-1">Shake&Stories</h1>
-        </a>
-
-        <form class="search">
-          <input
-            type="text"
-            class="search__input"
-            placeholder="Type in name or ingredient..."
-          />
-          <button class="search__button button">
-            <span>Search</span>
-            <svg class="search__icon">
-              <use href="./img/icons.svg#icon-search"></use>
-            </svg>
-          </button>
-        </form>
-        <nav class="actions">
-          <ul class="actions__list">
-            <li class="actions__item">
-              <button class="actions__button">
-                <svg class="actions__icon">
-                  <use href="./img/icons.svg#icon-pen"></use>
+  <a href="#" class="header__logo"
+    ><picture><source srcset="./img/logo.webp" type="image/webp"><img src="./img/logo.png" alt="Logo" class="header__logo" /></picture>
+    <h1 class="header__title title title-1">Shake&Stories</h1>
+  </a>
+  <form class="search">
+    <input
+      type="text"
+      class="search__input"
+      placeholder="Type in name or ingredient..."
+    />
+    <button class="search__button button">
+      <span>Search</span>
+      <svg class="search__icon">
+        <use href="./img/icons.svg#icon-search"></use>
+      </svg>
+    </button>
+  </form>
+  <nav class="actions">
+    <ul class="actions__list">
+      <li class="actions__item">
+        <button class="actions__button">
+          <svg class="actions__icon">
+            <use href="./img/icons.svg#icon-pen"></use>
+          </svg>
+          <span>Add</span>
+        </button>
+      </li>
+      <li class="actions__item">
+        <button class="actions__button">
+          <svg class="actions__icon">
+            <use href="./img/icons.svg#icon-star-empty"></use>
+          </svg>
+          <span>Favourites</span>
+        </button>
+        <!-- <div class="favourites">
+          <ul class="favourites__list">
+            <!-- <div class="message preview">
+              <div>
+                <svg>
+                  <use href="./img/icons.svg#icon-bulb"></use>
                 </svg>
-                <span>Add</span>
-              </button>
-            </li>
-            <li class="actions__item">
-              <button class="actions__button">
-                <svg class="actions__icon">
-                  <use href="./img/icons.svg#icon-heart1"></use>
-                </svg>
-                <span>Favourites</span>
-              </button>
-              <div class="favourites">
-                <ul class="favourites__list">
-                  <!-- <div class="message">
-                    <div>
-                      <svg>
-                        <use href="./img/icons.svg#icon-bulb"></use>
-                      </svg>
-                    </div>
-                    <p>Feel free to add all of your favourite recipes 🍹🍸</p>
-                  </div> -->
-                  <!-- <li class="preview">
-                    <a class="preview__link" href="#23456">
-                      <figure class="preview__fig">
-                        <img src="src/img/test-1.jpg" alt="Test" />
-                      </figure>
-                      <div class="preview__data">
-                        <h4 class="preview__name">
-                          Pasta with Tomato Cream ...
-                        </h4>
-                        <p class="preview__publisher">The Pioneer Woman</p>
-                      </div>
-                    </a>
-                  </li> -->
-                </ul>
               </div>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <!-- <div class="content">
-        <div class="results">
-          <ul class="results__list">
-            <li class="results__item item-results">
-              <a class="item-results__link" href="#">
-                <figure class="item-results__image">
-                  <img src="./img/dummy.jpg" alt="margarita" crossorigin />
+              <p>Add your favourites🍹🍸</p>
+            </div>
+            <li class="favourites__preview preview">
+              <a class="preview__link" href="#23456">
+                <figure class="preview__image">
+                  <picture><source srcset="./img/dummy.webp" type="image/webp"><img src="./img/dummy.jpg" alt="Margarita" /></picture>
                 </figure>
-                <div class="item-results__data">
-                  <h4 class="item-results__title">Margarita</h4>
-                  <p class="item-results__additional">smth additional</p>
-                  <div class="item-results__user-generated">
-                    <svg>
-                      <use href="./img/icons.svg#icon-tag"></use>
-                    </svg>
-                  </div>
+                <div class="preview__data">
+                  <h4 class="preview__title">Margarita</h4>
+                  <p class="preview__additional">Contemporary Classics</p>
+                </div>
+              </a>
+            </li>
+            <li class="favourites__preview preview">
+              <a class="preview__link" href="#23456">
+                <figure class="preview__image">
+                  <picture><source srcset="./img/dummy.webp" type="image/webp"><img src="./img/dummy.jpg" alt="Margarita" /></picture>
+                </figure>
+                <div class="preview__data">
+                  <h4 class="preview__title">Margarita</h4>
+                  <p class="preview__additional">Contemporary Classics</p>
+                </div>
+              </a>
+            </li>
+            <li class="favourites__preview preview">
+              <a class="preview__link" href="#23456">
+                <figure class="preview__image">
+                  <picture><source srcset="./img/dummy.webp" type="image/webp"><img src="./img/dummy.jpg" alt="Margarita" /></picture>
+                </figure>
+                <div class="preview__data">
+                  <h4 class="preview__title">Margarita</h4>
+                  <p class="preview__additional">Contemporary Classics</p>
                 </div>
               </a>
             </li>
           </ul>
-          <div class="results__pagination"></div>
+        </div> -->
+      </li>
+    </ul>
+  </nav>
+</header>
+
+      <div class="content">
+        <div class="sidebar">
+  <ul class="sidebar__list">
+    <li class="sidebar__preview preview">
+      <a class="preview__link" href="#">
+        <figure class="preview__image">
+          <picture><source srcset="./img/dummy.webp" type="image/webp"><img src="./img/dummy.jpg" alt="margarita" crossorigin /></picture>
+        </figure>
+        <div class="preview__data">
+          <h4 class="preview__title">Margarita</h4>
+          <p class="preview__additional">Contemporary Classics</p>
         </div>
+        <div class="preview__user-generated">
+          <svg>
+            <use href="./img/icons.svg#icon-star-empty"></use>
+          </svg>
+        </div>
+      </a>
+    </li>
+    <li class="sidebar__item preview">
+      <a class="preview__link" href="#">
+        <figure class="preview__image">
+          <picture><source srcset="./img/dummy.webp" type="image/webp"><img src="./img/dummy.jpg" alt="margarita" crossorigin /></picture>
+        </figure>
+        <div class="preview__data">
+          <h4 class="preview__title">Margarita</h4>
+          <p class="preview__additional">Contemporary Classics</p>
+        </div>
+        <div class="preview__user-generated">
+          <svg>
+            <use href="./img/icons.svg#icon-star-empty"></use>
+          </svg>
+        </div>
+      </a>
+    </li>
+    <li class="sidebar__item preview">
+      <a class="preview__link" href="#">
+        <figure class="preview__image">
+          <picture><source srcset="./img/dummy.webp" type="image/webp"><img src="./img/dummy.jpg" alt="margarita" crossorigin /></picture>
+        </figure>
+        <div class="preview__data">
+          <h4 class="preview__title">Margarita</h4>
+          <p class="preview__additional">Contemporary Classics</p>
+        </div>
+        <div class="preview__user-generated">
+          <svg>
+            <use href="./img/icons.svg#icon-star-empty"></use>
+          </svg>
+        </div>
+      </a>
+    </li>
+    <li class="sidebar__item preview">
+      <a class="preview__link" href="#">
+        <figure class="preview__image">
+          <picture><source srcset="./img/dummy.webp" type="image/webp"><img src="./img/dummy.jpg" alt="margarita" crossorigin /></picture>
+        </figure>
+        <div class="preview__data">
+          <h4 class="preview__title">Margarita</h4>
+          <p class="preview__additional">Contemporary Classics</p>
+        </div>
+        <div class="preview__user-generated">
+          <svg>
+            <use href="./img/icons.svg#icon-star-empty"></use>
+          </svg>
+        </div>
+      </a>
+    </li>
+  </ul>
+  <div class="sidebar__pagination pagination">
+    <div class="pagination__body">
+      <a
+        href="#"
+        class="pagination__arrow pagination__arrow_prev"
+        id="prev-button"
+        ><svg>
+          <use href="./img/icons.svg#icon-chevron-left"></use></svg
+      ></a>
+      <div class="pagination__numbers" id="pagination-numbers">
+        <a href="#" class="pagination__number active">1</a>
+        <a href="#" class="pagination__number">2</a>
+        <a href="#" class="pagination__number">3</a>
+      </div>
+      <a
+        href="#"
+        class="pagination__arrow pagination__arrow_next"
+        id="next-button"
+        ><svg>
+          <use href="./img/icons.svg#icon-chevron-right"></use></svg
+      ></a>
+    </div>
+  </div>
+</div>
+
         <div class="recipe">
-          <figure class="recipe__image">
-            <img
-              src="./img/dummy.jpg"
-              alt="margarita"
-              class="recipe__img"
-              crossorigin
-            />
-            <h1 class="recipe__title">
-              <span>Margarita</span>
-            </h1>
-          </figure>
-
-          <div class="recipe__details">
-            <div class="recipe__info">
-              <svg class="recipe__info-icon">
-                <use href="./img/icons.svg#icon-clock"></use>
-              </svg>
-              <span class="recipe__info-data recipe__info-data--minutes"
-                >10</span
-              >
-              <span class="recipe__info-text">minutes</span>
-            </div>
-            <div class="recipe__info">
-              <svg class="recipe__info-icon">
-                <use href="./src/icons.svg#icon-diamond"></use>
-              </svg>
-              <span class="recipe__info-data recipe__info-data--people"
-                >10</span
-              >
-              <span class="recipe__info-text">servings</span>
-
-              <div class="recipe__info-buttons">
-                <button class="btn--tiny btn--update-servings" data-update="1">
-                  <svg>
-                    <use href="./src/icons.svg#icon-diamond"></use>
-                  </svg>
-                </button>
-                <button class="btn--tiny btn--update-servings" data-update="1">
-                  <svg>
-                    <use href="./src/icons.svg#icon-diamond"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-
-            <div
-              class="recipe__user-generated ${this._data.key ? '' : 'hidden'}"
-            >
-              <svg>
-                <use href="${icons}#icon-user"></use>
-              </svg>
-            </div>
-            <button class="btn--round btn--bookmark">
-              <svg class="">
-                <use
-                  href="${icons}#icon-bookmark${this._data.bookmarked ? '-fill' : ''}"
-                ></use>
-              </svg>
-            </button>
-          </div>
-          <div class="recipe__ingredients">
-            <h2 class="heading--2">Recipe ingredients</h2>
-            <ul class="recipe__ingredient-list">
-              ${this._data.ingredients .map(ingredient => { return `
-              <li class="recipe__ingredient">
-                <svg class="recipe__icon">
-                  <use href="${icons}#icon-check"></use>
-                </svg>
-                <div class="recipe__quantity">
-                  ${ ingredient.quantity ? new
-                  Fraction(ingredient.quantity).toString() : '' }
-                </div>
-                <div class="recipe__description">
-                  <span class="recipe__unit">${ingredient.unit}</span>
-                  ${ingredient.description}
-                </div>
-              </li>
-              `; }) .join('')}
-            </ul>
-          </div>
-
-          <div class="recipe__directions">
-            <h2 class="heading--2">How to cook it</h2>
-            <p class="recipe__directions-text">
-              This recipe was carefully designed and tested by
-              <span class="recipe__publisher">${ this._data.publisher }</span>.
-              Please check out directions at their website.
-            </p>
-            <a
-              class="btn--small recipe__btn"
-              href="${this._data.sourceUrl}"
-              target="_blank"
-            >
-              <span>Directions</span>
-              <svg class="search__icon">
-                <use href="${icons}#icon-arrow-right"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
+  <figure class="recipe__figure">
+    <img
+      src="./img/dummy.jpg"
+      alt="margarita"
+      class="recipe__image"
+      crossorigin
+    />
+    <div class="recipe__header">
+      <h1 class="recipe__title title title-1">
+        <span>Margarita</span>
+      </h1>
+      <div class="recipe__user-generated">
+        <svg>
+          <use href="./img/icons.svg#icon-star-empty"></use>
+        </svg>
       </div>
     </div>
-    <div class="overlay hidden"></div>
-    <div class="add-recipe-window hidden"> -->
-      <button class="btn--close-modal">&times;</button>
-      <form class="upload">
-        <div class="upload__column">
-          <h3 class="upload__heading">Recipe data</h3>
-          <label>Title</label>
-          <input value="TEST" required name="title" type="text" />
-          <label>URL</label>
-          <input value="TEST" required name="sourceUrl" type="text" />
-          <label>Image URL</label>
-          <input value="TEST" required name="image" type="text" />
-          <label>Publisher</label>
-          <input value="TEST" required name="publisher" type="text" />
-          <label>Prep time</label>
-          <input value="23" required name="cookingTime" type="number" />
-          <label>Servings</label>
-          <input value="23" required name="servings" type="number" />
-        </div>
-
-        <div class="upload__column">
-          <h3 class="upload__heading">Ingredients</h3>
-          <label>Ingredient 1</label>
-          <input
-            value="0.5,kg,Rice"
-            type="text"
-            required
-            name="ingredient-1"
-            placeholder="Format: 'Quantity,Unit,Description'"
-          />
-          <label>Ingredient 2</label>
-          <input
-            value="1,,Avocado"
-            type="text"
-            name="ingredient-2"
-            placeholder="Format: 'Quantity,Unit,Description'"
-          />
-          <label>Ingredient 3</label>
-          <input
-            value=",,salt"
-            type="text"
-            name="ingredient-3"
-            placeholder="Format: 'Quantity,Unit,Description'"
-          />
-          <label>Ingredient 4</label>
-          <input
-            type="text"
-            name="ingredient-4"
-            placeholder="Format: 'Quantity,Unit,Description'"
-          />
-          <label>Ingredient 5</label>
-          <input
-            type="text"
-            name="ingredient-5"
-            placeholder="Format: 'Quantity,Unit,Description'"
-          />
-          <label>Ingredient 6</label>
-          <input
-            type="text"
-            name="ingredient-6"
-            placeholder="Format: 'Quantity,Unit,Description'"
-          />
-        </div>
-
-        <button class="btn upload__btn">
-          <svg>
-            <use href="src/img/icons.svg#icon-upload-cloud"></use>
-          </svg>
-          <span>Upload</span>
-        </button>
-      </form>
+    <div class="recipe__details details">
+      <div class="details__item">
+        <p class="details__description">🥴Alcoholic</p>
+      </div>
+      <div class="details__item">
+        <p class="details__description">🍹Coctail glass</p>
+      </div>
     </div>
-    <script src="js/app.min.js"></script>
+  </figure>
+  <div class="recipe__body">
+    <ul class="recipe__part recipe__ingredients">
+      <li class="recipe__ingredient ingredient">
+        <figure class="ingredient__image">
+          <picture><source srcset="./img/ing-dummy.webp" type="image/webp"><img src="./img/ing-dummy.jpg" alt="gin" /></picture>
+        </figure>
+        <span class="ingredient__name">Gin</span>
+        <span class="ingredient__measurement">4.5 cl</span>
+      </li>
+      <li class="recipe__ingredient ingredient">
+        <figure class="ingredient__image">
+          <picture><source srcset="./img/ing-dummy.webp" type="image/webp"><img src="./img/ing-dummy.jpg" alt="gin" /></picture>
+        </figure>
+        <span class="ingredient__name">Gin</span>
+        <span class="ingredient__measurement">4.5 cl</span>
+      </li>
+      <li class="recipe__ingredient ingredient">
+        <figure class="ingredient__image">
+          <picture><source srcset="./img/ing-dummy.webp" type="image/webp"><img src="./img/ing-dummy.jpg" alt="gin" /></picture>
+        </figure>
+        <span class="ingredient__name">Gin</span>
+        <span class="ingredient__measurement">4.5 cl</span>
+      </li>
+      <li class="recipe__ingredient ingredient">
+        <figure class="ingredient__image">
+          <picture><source srcset="./img/ing-dummy.webp" type="image/webp"><img src="./img/ing-dummy.jpg" alt="gin" /></picture>
+        </figure>
+        <span class="ingredient__name">Gin</span>
+        <span class="ingredient__measurement">4.5 cl</span>
+      </li>
+      <li class="recipe__ingredient ingredient">
+        <figure class="ingredient__image">
+          <picture><source srcset="./img/ing-dummy.webp" type="image/webp"><img src="./img/ing-dummy.jpg" alt="gin" /></picture>
+        </figure>
+        <span class="ingredient__name">Gin</span>
+        <span class="ingredient__measurement">4.5 cl</span>
+      </li>
+    </ul>
+    <div class="recipe__part recipe__instructions">
+      Rub the rim of the glass with the lime slice to make the salt stick to it.
+      Take care to moisten only the outer rim and sprinkle the salt on it. The
+      salt should present to the lips of the imbiber and never mix into the
+      cocktail. Shake the other ingredients with ice, then carefully pour into
+      the glass.
+    </div>
+  </div>
+</div>
+
+        
+      </div>
+      <footer class="footer">
+  <a href="" class="footer__link">
+    <svg>
+      <use href="./img/icons.svg#icon-github"></use>
+    </svg>
+    <p class="footer__descr">Open-source code by Olena Sulimenko</p>
+  </a>
+</footer>
+
+    </div>
+    
+       
+    </div>
+    <script src="js/app.min.js?_v=20230725162713"></script>
   </body>
 </html>

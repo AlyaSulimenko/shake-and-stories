@@ -1,0 +1,131 @@
+.recipe {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 66.66%;
+  @media only screen and (max-width: $mobileSmall) {
+    flex: 0 1 auto;
+  }
+  //.recipe__figure
+  &__figure {
+    width: 100%;
+    flex: 0 0 50%;
+    overflow: hidden;
+    position: relative;
+    @media only screen and (max-width: $mobile) {
+      flex: 0 0 40rem;
+    }
+  }
+  // .recipe__image
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  // .recipe__header
+  &__header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  // .recipe__title
+  &__title {
+    color: $color-secondary;
+  }
+  // .recipe__user-generated
+  &__user-generated {
+    margin-right: 2rem;
+    svg {
+      width: 3rem;
+      height: 3rem;
+      fill: $color-secondary;
+    }
+  }
+  // .recipe__details
+  &__details {
+  }
+  &__body {
+    padding: 1rem 2rem;
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    @media only screen and (max-width: $mobileSmall) {
+      flex: 0 1 auto;
+    }
+  }
+  // .recipe__part
+  &__part {
+    flex-basis: 50%;
+    overflow-y: auto;
+    font-size: 1.6rem;
+
+    &:not(:last-child) {
+      padding-bottom: 1rem;
+      @media only screen and (max-width: $mobile) {
+        padding-bottom: 3rem;
+        flex-basis: auto;
+      }
+      @media only screen and (max-width: $mobileSmall) {
+        padding-bottom: 0;
+      }
+    }
+    &:last-child {
+      position: relative;
+      padding-top: 1rem;
+      border-top: 0.2rem solid $color-text-heading-1;
+      @media only screen and (max-width: $mobileSmall) {
+        //max-height: 30rem;
+        overflow-y: auto;
+      }
+    }
+  }
+  //.recipe__ingredients
+  &__ingredients {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 8rem));
+    grid-template-rows: minmax(15rem, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+    @media only screen and (max-width: $mobile) {
+      display: flex;
+      overflow-x: auto;
+    }
+  }
+
+  // .recipe__instructions
+
+  &__instructions {
+  }
+}
+
+.details {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  column-gap: 1rem;
+  //.details__item
+  &__item {
+    background-color: rgba(#fff, 0.7);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 1rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  // .detailes__description
+
+  &__description {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #918581;
+  }
+}

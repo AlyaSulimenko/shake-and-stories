@@ -1,0 +1,298 @@
+<div class="add" id="add-cocktail">
+  <button data-close type="button" class="add__close arrow">
+    <span class="arrow_span"></span>
+    <span class="arrow_span"></span>
+    <span class="arrow_span"></span>
+  </button>
+ 
+  <div class="add__body">
+    <div class="add__header"><h2 class="add__title  title title-1">
+      You are welcome to add any cocktail you like!
+    </h2>
+    <p
+      class="add__description description description-1"
+    >
+     Please fill in ALL the inputs carefully for your recipe to be rendered correctly.
+    </p></div>
+    <form class="add__form form" action="">
+      <div class="form__header form__header-1"><h3 class="form__subtitle subtitle subtitle-3">General data</h3></div>
+      <div class="form__header form__header-2"> <h3 class="form__subtitle subtitle subtitle-3">Ingredients</h3>
+        <p class="form__description description description-2">
+          Please select ingredient from the list, then put in quantity and
+          measurement units.
+        </p></div>
+      <div class="form__column">
+        <div class="form__group form__group-horisontal">
+        <label for="cocktail-name" class="form__label description description-3">Name of cocktail:</label>
+        <input type="text" class="form__input form__input-large" id="cocktail-name" name="cocktail-name" required>
+      </div>
+      <div class="form__group form__group-horisontal">
+        <label for="image-url" class="form__label description description-3">Image URL:</label>
+        <input type="text" class="form__input form__input-large" id="image-url" name="image-url" required>
+      </div>
+      <div class="form__group form__group-align-top"><label class="form__label description description-3" for="message">Some instructions:</label>
+        <textarea
+        class="form__textarea"
+          id="message"
+          name="message"
+          rows="8"
+          cols="70"
+          required>
+        </textarea>
+      </div>
+      <div class="form__group form__group-vertical">
+        <p class="form__label description description-3">Is it tipsy?</p>
+        <label class=" description description-3 description-3-thin">
+          <input
+           type="radio"
+            name="drink-type"
+             value="alcoholic"
+              required
+               />
+          Alcoholic <span class="emoji">😈</span>
+        </label>
+        <label class=" description description-3 description-3-thin">
+          <input
+              type="radio"
+              name="drink-type"
+              value="non-alcoholic"
+              required
+            />
+            Non-Alcoholic <span class="emoji">👼🏼</span>
+          </label>
+          <label class=" description description-3 description-3-thin">
+            <input
+              type="radio"
+              name="drink-type"
+              value="optional-alcohol"
+              required
+            />
+            Optional Alcohol <span class="emoji">🤔</span>
+          </label>
+        </div>
+        <div class="form__group form__group-horisontal">
+          <label for="glass-type" class="form__label description description-3"
+            >What glass do you prefer for it?
+          </label>
+          <select id="glass-type" name="glass-type" class="form__input form__input-large" required>
+            <option value="Highball glass">Highball glass</option>
+            <option value="Cocktail glass">Cocktail glass</option>
+            <option value="Old-fashioned glass">Old-fashioned glass</option>
+            <option value="Whiskey Glass">Whiskey Glass</option>
+            <option value="Collins glass">Collins glass</option>
+            <option value="Pousse cafe glass">Pousse cafe glass</option>
+            <option value="Champagne flute">Champagne flute</option>
+            <option value="Whiskey sour glass">Whiskey sour glass</option>
+            <option value="Cordial glass">Cordial glass</option>
+            <option value="Brandy snifter">Brandy snifter</option>
+            <option value="White wine glass">White wine glass</option>
+            <option value="Nick and Nora Glass">Nick and Nora Glass</option>
+            <option value="Hurricane glass">Hurricane glass</option>
+            <option value="Coffee mug">Coffee mug</option>
+            <option value="Shot glass">Shot glass</option>
+            <option value="Jar">Jar</option>
+            <option value="Irish coffee cup">Irish coffee cup</option>
+            <option value="Punch bowl">Punch bowl</option>
+            <option value="Pitcher">Pitcher</option>
+            <option value="Pint glass">Pint glass</option>
+            <option value="Copper Mug">Copper Mug</option>
+            <option value="Wine Glass">Wine Glass</option>
+            <option value="Beer mug">Beer mug</option>
+            <option value="Coupette glass">Coupette glass</option>
+            <option value="Beer pilsner">Beer pilsner</option>
+            <option value="Beer Glass">Beer Glass</option>
+            <option value="Parfait glass">Parfait glass</option>
+            <option value="Mason jar">Mason jar</option>
+            <option value="Margarita glass">Margarita glass</option>
+            <option value="Martini Glass">Martini Glass</option>
+            <option value="Balloon Glass">Balloon Glass</option>
+            <option value="Coupe Glass">Coupe Glass</option>
+          </select>
+        </div>
+        <div class="form__group form__group-horisontal">
+          <label for="drink-type" class="form__label description description-3"
+            >Help us classify it:</label
+          >
+          <select id="drink-type" class="form__input form__input-large" name="drink-type" required>
+            <option value="Ordinary Drink">Ordinary Drink</option>
+            <option value="Cocktail">Cocktail</option>
+            <option value="Shake">Shake</option>
+            <option value="Other">Other</option>
+            <option value="Cocoa">Cocoa</option>
+            <option value="Shot">Shot</option>
+            <option value="Coffee/Tea">Coffee/Tea</option>
+            <option value="Homemade Liqueur">Homemade Liqueur</option>
+            <option value="Punch/Party Drink">Punch/Party Drink</option>
+            <option value="Beer">Beer</option>
+            <option value="Soft Drink">Soft Drink</option>
+          </select>
+        </div>
+      </div>
+      <div class="form__column">
+        <div class="form__group form__group-horisontal form__group-small-input"><form>
+            <label for="ingredient-count" class="form__label description description-3">How many ingredients does it have (up to 15)?</label>
+            <select id="ingredient-count"  class="form__input form__input-small" name="ingredient-count" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+            </select>
+        </div>
+        <div class="form__ingredient-group">
+            <label for="ingredient" class="form__label description description-3 ingredient-label-1">Ingredient:</label>
+            <select id="ingredient" class="form__input ingredient-input-1" name="ingredient" required>
+              <option value="Añejo rum">Añejo rum</option>
+              <option value="Absolut Citron">Absolut Citron</option>
+              <option value="Ale">Ale</option>
+              <option value="Amaretto">Amaretto</option>
+              <option value="Angelica root">Angelica root</option>
+              <option value="Apple brandy">Apple brandy</option>
+              <option value="Apple cider">Apple cider</option>
+              <option value="Applejack">Applejack</option>
+              <option value="Apricot brandy">Apricot brandy</option>
+              <option value="Berries">Berries</option>
+              <option value="Bitters">Bitters</option>
+              <option value="Blackberry brandy">Blackberry brandy</option>
+              <option value="Blended whiskey">Blended whiskey</option>
+              <option value="Bourbon">Bourbon</option>
+              <option value="Brandy">Brandy</option>
+              <option value="Brown sugar">Brown sugar</option>
+              <option value="Cantaloupe">Cantaloupe</option>
+              <option value="Carbonated water">Carbonated water</option>
+              <option value="Champagne">Champagne</option>
+              <option value="Cherry brandy">Cherry brandy</option>
+              <option value="Chocolate">Chocolate</option>
+              <option value="Chocolate liqueur">Chocolate liqueur</option>
+              <option value="Chocolate syrup">Chocolate syrup</option>
+              <option value="Cider">Cider</option>
+              <option value="Cocoa powder">Cocoa powder</option>
+              <option value="Coffee">Coffee</option>
+              <option value="Coffee brandy">Coffee brandy</option>
+              <option value="Coffee liqueur">Coffee liqueur</option>
+              <option value="Cognac">Cognac</option>
+              <option value="Cranberries">Cranberries</option>
+              <option value="Cranberry juice">Cranberry juice</option>
+              <option value="Cream">Cream</option>
+              <option value="Creme de Cacao">Creme de Cacao</option>
+              <option value="Creme de Cassis">Creme de Cassis</option>
+              <option value="Creme de Menthe">Creme de Menthe</option>
+              <option value="Demerara Sugar">Demerara Sugar</option>
+              <option value="Dubonnet Rouge">Dubonnet Rouge</option>
+              <option value="Egg">Egg</option>
+              <option value="Egg yolk">Egg yolk</option>
+              <option value="Espresso">Espresso</option>
+              <option value="Everclear">Everclear</option>
+              <option value="Firewater">Firewater</option>
+              <option value="Galliano">Galliano</option>
+              <option value="Gin">Gin</option>
+              <option value="Ginger">Ginger</option>
+              <option value="Grapes">Grapes</option>
+              <option value="Grapefruit juice">Grapefruit juice</option>
+              <option value="Grape juice">Grape juice</option>
+              <option value="Green Creme de Menthe">
+                Green Creme de Menthe
+              </option>
+              <option value="Grenadine">Grenadine</option>
+              <option value="Heavy cream">Heavy cream</option>
+              <option value="Irish cream">Irish cream</option>
+              <option value="Irish whiskey">Irish whiskey</option>
+              <option value="Jack Daniels">Jack Daniels</option>
+              <option value="Johnnie Walker">Johnnie Walker</option>
+              <option value="Kiwi">Kiwi</option>
+              <option value="Lager">Lager</option>
+              <option value="Lemon">Lemon</option>
+              <option value="Lemonade">Lemonade</option>
+              <option value="Lemon juice">Lemon juice</option>
+              <option value="Lemon vodka">Lemon vodka</option>
+              <option value="Lime">Lime</option>
+              <option value="Lime juice">Lime juice</option>
+              <option value="Malibu rum">Malibu rum</option>
+              <option value="Mango">Mango</option>
+              <option value="Maraschino cherry">Maraschino cherry</option>
+              <option value="Martini Rosso">Martini Rosso</option>
+              <option value="Mezcal">Mezcal</option>
+              <option value="Midori melon liqueur">Midori melon liqueur</option>
+              <option value="Milk">Milk</option>
+              <option value="Mint">Mint</option>
+              <option value="Orange">Orange</option>
+              <option value="Orange bitters">Orange bitters</option>
+              <option value="Orange juice">Orange juice</option>
+              <option value="Peach nectar">Peach nectar</option>
+              <option value="Peach Vodka">Peach Vodka</option>
+              <option value="Peanut Oil">Peanut Oil</option>
+              <option value="Peppermint schnapps">Peppermint schnapps</option>
+              <option value="Pineapple juice">Pineapple juice</option>
+              <option value="Pisco">Pisco</option>
+              <option value="Port">Port</option>
+              <option value="Red wine">Red wine</option>
+              <option value="Ricard">Ricard</option>
+              <option value="Rum">Rum</option>
+              <option value="Rye whiskey">Rye whiskey</option>
+              <option value="Sambuca">Sambuca</option>
+              <option value="Scotch">Scotch</option>
+              <option value="Sherry">Sherry</option>
+              <option value="Sloe gin">Sloe gin</option>
+              <option value="Southern Comfort">Southern Comfort</option>
+              <option value="Soy milk">Soy milk</option>
+              <option value="Spiced rum">Spiced rum</option>
+              <option value="Sprite">Sprite</option>
+              <option value="Squirt">Squirt</option>
+              <option value="Strawberries">Strawberries</option>
+              <option value="Strawberry schnapps">Strawberry schnapps</option>
+              <option value="Sugar">Sugar</option>
+              <option value="Sugar syrup">Sugar syrup</option>
+              <option value="Sweet Vermouth">Sweet Vermouth</option>
+              <option value="Tea">Tea</option>
+              <option value="Tequila">Tequila</option>
+              <option value="Tia maria">Tia maria</option>
+              <option value="Tomato juice">Tomato juice</option>
+              <option value="Tonic water">Tonic water</option>
+              <option value="Triple sec">Triple sec</option>
+              <option value="Vanilla ice-cream">Vanilla ice-cream</option>
+              <option value="Vanilla vodka">Vanilla vodka</option>
+              <option value="Vodka">Vodka</option>
+              <option value="Water">Water</option>
+              <option value="Watermelon">Watermelon</option>
+              <option value="Whiskey">Whiskey</option>
+              <option value="Whiskey sour mix">Whiskey sour mix</option>
+              <option value="White Creme de Menthe">
+                White Creme de Menthe
+              </option>
+              <option value="White Rum">White Rum</option>
+              <option value="White wine glass">White wine glass</option>
+              <option value="Wild Turkey">Wild Turkey</option>
+              <option value="Wine">Wine</option>
+              <option value="Woodruff syrup">Woodruff syrup</option>
+              <option value="Yoghurt">Yoghurt</option>
+            </select>
+            <label for="quantity" class="form__label description description-3  ingredient-label-2">Quantity:</label>
+            <input type="text" class="form__input ingredient-input-2" id="quantity" name="quantity" required />
+            <label for="measurement" class="form__label description description-3  ingredient-label-3">Units:</label>
+            <input type="text" class="form__input ingredient-input-3" id="measurement" name="measurement" required />
+        </div>
+       
+      </div>
+    </form>
+    <button type="submit" class="button form__button">
+      Add cocktail
+    </button>
+  </div>
+</div>
+
+
+
+
+
+  
+

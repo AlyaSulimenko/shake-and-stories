@@ -1,9 +1,21 @@
-@import "base";
+//Abstract
+@import "variables";
+//Base
 @import "null";
-@import "components";
-@import "header";
-@import "preview";
-@import "searchResults";
+@import "base";
+@import "animations";
 @import "typography";
-@import "recipe";
-@import "upload";
+//Components
+@import "buttons";
+@import "spinner";
+@import "message";
+@import "preview";
+@import "ingredient-preview";
+@import "pagination";
+@import "form";
+//Layout
+@import "header";
+@import "sidebar";
+@import "recipe-field";
+@import "footer";
+@import "add-cocktail";
