@@ -8,8 +8,8 @@
     href="./img/favicon-32x32.png"
     type="image/x-icon"
   />
-  <link rel="stylesheet" href="css/style.min.css?_v=20230725162713" />
-  <script type="module" src="src/js/controller.js?_v=20230725162713"></script>
+  <link rel="stylesheet" href="css/style.min.css?_v=20230828120350" />
+  <script defer src="js/app.min.js?_v=20230828120350"></script>
   <title>Shake&Stories</title>
   <body>
     <div class="container">
@@ -24,7 +24,7 @@
       class="search__input"
       placeholder="Type in name or ingredient..."
     />
-    <button class="search__button button">
+    <button type="submit" class="search__button button">
       <span>Search</span>
       <svg class="search__icon">
         <use href="./img/icons.svg#icon-search"></use>
@@ -101,8 +101,8 @@
       <div class="content">
         <div class="sidebar">
   <ul class="sidebar__list">
-    <li class="sidebar__preview preview">
-      <a class="preview__link" href="#">
+    <!-- <li class="sidebar__item preview">
+      <a class="preview__link" href="#11007">
         <figure class="preview__image">
           <picture><source srcset="./img/dummy.webp" type="image/webp"><img src="./img/dummy.jpg" alt="margarita" crossorigin /></picture>
         </figure>
@@ -116,64 +116,16 @@
           </svg>
         </div>
       </a>
-    </li>
-    <li class="sidebar__item preview">
-      <a class="preview__link" href="#">
-        <figure class="preview__image">
-          <picture><source srcset="./img/dummy.webp" type="image/webp"><img src="./img/dummy.jpg" alt="margarita" crossorigin /></picture>
-        </figure>
-        <div class="preview__data">
-          <h4 class="preview__title">Margarita</h4>
-          <p class="preview__additional">Contemporary Classics</p>
-        </div>
-        <div class="preview__user-generated">
-          <svg>
-            <use href="./img/icons.svg#icon-star-empty"></use>
-          </svg>
-        </div>
-      </a>
-    </li>
-    <li class="sidebar__item preview">
-      <a class="preview__link" href="#">
-        <figure class="preview__image">
-          <picture><source srcset="./img/dummy.webp" type="image/webp"><img src="./img/dummy.jpg" alt="margarita" crossorigin /></picture>
-        </figure>
-        <div class="preview__data">
-          <h4 class="preview__title">Margarita</h4>
-          <p class="preview__additional">Contemporary Classics</p>
-        </div>
-        <div class="preview__user-generated">
-          <svg>
-            <use href="./img/icons.svg#icon-star-empty"></use>
-          </svg>
-        </div>
-      </a>
-    </li>
-    <li class="sidebar__item preview">
-      <a class="preview__link" href="#">
-        <figure class="preview__image">
-          <picture><source srcset="./img/dummy.webp" type="image/webp"><img src="./img/dummy.jpg" alt="margarita" crossorigin /></picture>
-        </figure>
-        <div class="preview__data">
-          <h4 class="preview__title">Margarita</h4>
-          <p class="preview__additional">Contemporary Classics</p>
-        </div>
-        <div class="preview__user-generated">
-          <svg>
-            <use href="./img/icons.svg#icon-star-empty"></use>
-          </svg>
-        </div>
-      </a>
-    </li>
+    </li> -->
   </ul>
   <div class="sidebar__pagination pagination">
     <div class="pagination__body">
-      <a
+      <!-- <a
         href="#"
         class="pagination__arrow pagination__arrow_prev"
         id="prev-button"
         ><svg>
-          <use href="./img/icons.svg#icon-chevron-left"></use></svg
+          <use href="./img/icons.svg#icon-circle-left"></use></svg
       ></a>
       <div class="pagination__numbers" id="pagination-numbers">
         <a href="#" class="pagination__number active">1</a>
@@ -185,14 +137,25 @@
         class="pagination__arrow pagination__arrow_next"
         id="next-button"
         ><svg>
-          <use href="./img/icons.svg#icon-chevron-right"></use></svg
-      ></a>
+          <use href="./img/icons.svg#icon-circle-right"></use></svg
+      ></a> -->
     </div>
   </div>
 </div>
 
         <div class="recipe">
-  <figure class="recipe__figure">
+  <!-- <div class="message">
+    <p>Start by searching for a cocktail or an ingredient🍹🍸🍋</p>
+  </div> -->
+  <!-- <div class="error">
+            <div>
+              <svg>
+                <use href="src/img/icons.svg#icon-alert-triangle"></use>
+              </svg>
+            </div>
+            <p>No recipes found for your query. Please try again!</p>
+  </div>-->
+  <!-- <figure class="recipe__figure">
     <img
       src="./img/dummy.jpg"
       alt="margarita"
@@ -263,7 +226,7 @@
       cocktail. Shake the other ingredients with ice, then carefully pour into
       the glass.
     </div>
-  </div>
+  </div> -->
 </div>
 
         
@@ -281,6 +244,5 @@
     
        
     </div>
-    <script src="js/app.min.js?_v=20230725162713"></script>
-  </body>
+   
 </html>

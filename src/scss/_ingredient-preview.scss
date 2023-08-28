@@ -35,10 +35,11 @@
 
   &__name {
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
-    line-height: 0.8;
-    flex: 1 0 auto;
+    line-height: 1;
+    flex: 1 1 auto;
+
     &:not(:last-child) {
       margin-bottom: 0.5rem;
     }

@@ -1,14 +1,14 @@
 .recipe {
   display: flex;
   flex-direction: column;
-  flex: 0 1 66.66%;
+  flex: 0 1 66.67%;
   @media only screen and (max-width: $mobileSmall) {
     flex: 0 1 auto;
   }
   //.recipe__figure
   &__figure {
     width: 100%;
-    flex: 0 0 50%;
+    flex: 0 0 60%;
     overflow: hidden;
     position: relative;
     @media only screen and (max-width: $mobile) {
@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -64,7 +64,7 @@
   // .recipe__part
   &__part {
     flex-basis: 50%;
-    overflow-y: auto;
+
     font-size: 1.6rem;
 
     &:not(:last-child) {
@@ -91,10 +91,11 @@
   &__ingredients {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(8rem, 8rem));
-    grid-template-rows: minmax(15rem, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1.1rem));
+    grid-template-rows: minmax(15rem, 17rem);
     grid-auto-rows: 1fr;
-    gap: 1rem;
+    gap: 2rem;
+    overflow-y: auto;
     @media only screen and (max-width: $mobile) {
       display: flex;
       overflow-x: auto;
@@ -104,6 +105,7 @@
   // .recipe__instructions
 
   &__instructions {
+    overflow-y: auto;
   }
 }
 
