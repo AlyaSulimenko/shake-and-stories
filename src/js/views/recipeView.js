@@ -2,7 +2,7 @@ import View from "./View.js";
 class RecipeView extends View {
   parentElement = document.querySelector(".recipe");
   errorMessage = `Sorry, wrong request🥺`;
-  message = `Start by searching for a cocktail or an ingredient🍹🍸🍋`;
+  message = `Start by searching for a cocktail🍹🍸🍋`;
   addHandlerRender(handler) {
     window.addEventListener("hashchange", handler);
     //the same on load?
