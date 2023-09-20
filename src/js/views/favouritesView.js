@@ -1,15 +1,18 @@
 import View from "./View.js";
 import previewView from "./previewView.js";
-class ResultsView extends View {
-  parentElement = document.querySelector(".sidebar__list");
-  errorMessage = `Sorry, we couldn't find this drink in our collection🥺`;
-  message = `Start by searching for a cocktail or an ingredient🍹🍸🍋`;
+class FavouritesView extends View {
+  parentElement = document.querySelector(".favourites__list");
+  errorMessage = `Add your favourites🍹🍸`;
+  message = ``;
   generateMarkup() {
-    const results = this.data;
+    const results = Array.from(this.data);
     const resultsMarkup = results
       .map((result) => previewView.render(result, false))
       .join("");
     return resultsMarkup;
+  }
+  addHandlerRender(handler) {
+    window.addEventListener("load", handler());
   }
   //   generateMarkup() {
   //     const results = this.data;
@@ -31,6 +34,4 @@ class ResultsView extends View {
   //     return resultsMarkup;
   //   }
 }
-export default new ResultsView();
-
-//
+export default new FavouritesView();

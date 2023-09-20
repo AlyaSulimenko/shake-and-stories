@@ -1,69 +1,86 @@
-<div class="add" id="add-cocktail">
+<div class="add hidden" id="add-cocktail">
   <button data-close type="button" class="add__close arrow">
     <span class="arrow_span"></span>
     <span class="arrow_span"></span>
     <span class="arrow_span"></span>
   </button>
- 
+
   <div class="add__body">
-    <div class="add__header"><h2 class="add__title  title title-1">
-      You are welcome to add any cocktail you like!
-    </h2>
-    <p
-      class="add__description description description-1"
-    >
-     Please fill in ALL the inputs carefully for your recipe to be rendered correctly.
-    </p></div>
+    <div class="add__header">
+      <h2 class="add__title title title-1">
+        You are welcome to add any cocktail you like!
+      </h2>
+      <p class="add__description description description-1">
+        Please fill in ALL the inputs carefully for your recipe to be rendered
+        correctly.
+      </p>
+    </div>
     <form class="add__form form" action="">
-      <div class="form__header form__header-1"><h3 class="form__subtitle subtitle subtitle-3">General data</h3></div>
-      <div class="form__header form__header-2"> <h3 class="form__subtitle subtitle subtitle-3">Ingredients</h3>
+      <div class="form__header form__header-1">
+        <h3 class="form__subtitle subtitle subtitle-3">General data</h3>
+      </div>
+      <div class="form__header form__header-2">
+        <h3 class="form__subtitle subtitle subtitle-3">Ingredients</h3>
         <p class="form__description description description-2">
           Please select ingredient from the list, then put in quantity and
           measurement units.
-        </p></div>
+        </p>
+      </div>
       <div class="form__column">
         <div class="form__group form__group-horisontal">
-        <label for="cocktail-name" class="form__label description description-3">Name of cocktail:</label>
-        <input type="text" class="form__input form__input-large" id="cocktail-name" name="cocktail-name" required>
-      </div>
-      <div class="form__group form__group-horisontal">
-        <label for="image-url" class="form__label description description-3">Image URL:</label>
-        <input type="text" class="form__input form__input-large" id="image-url" name="image-url" required>
-      </div>
-      <div class="form__group form__group-align-top"><label class="form__label description description-3" for="message">Some instructions:</label>
-        <textarea
-        class="form__textarea"
-          id="message"
-          name="message"
-          rows="8"
-          cols="70"
-          required>
-        </textarea>
-      </div>
-      <div class="form__group form__group-vertical">
-        <p class="form__label description description-3">Is it tipsy?</p>
-        <label class=" description description-3 description-3-thin">
+          <label
+            for="cocktail-name"
+            class="form__label description description-3"
+            >Name of cocktail:</label
+          >
           <input
-           type="radio"
-            name="drink-type"
-             value="alcoholic"
-              required
-               />
-          Alcoholic <span class="emoji">😈</span>
-        </label>
-        <label class=" description description-3 description-3-thin">
+            type="text"
+            class="form__input form__input-large"
+            id="cocktail-name"
+            name="cocktail-name"
+            required
+          />
+        </div>
+        <div class="form__group form__group-horisontal">
+          <label for="image-url" class="form__label description description-3"
+            >Image URL:</label
+          >
           <input
-              type="radio"
-              name="drink-type"
-              value="non-alcoholic"
-              required
-            />
+            type="text"
+            class="form__input form__input-large"
+            id="image-url"
+            name="image-url"
+            required
+          />
+        </div>
+        <div class="form__group form__group-align-top">
+          <label class="form__label description description-3" for="message"
+            >Some instructions:</label
+          >
+          <textarea
+            class="form__textarea"
+            id="message"
+            name="message"
+            rows="8"
+            cols="70"
+            required
+          >
+          </textarea>
+        </div>
+        <div class="form__group form__group-vertical">
+          <p class="form__label description description-3">Is it tipsy?</p>
+          <label class="description description-3 description-3-thin">
+            <input type="radio" name="alcohol" value="alcoholic" required />
+            Alcoholic <span class="emoji">😈</span>
+          </label>
+          <label class="description description-3 description-3-thin">
+            <input type="radio" name="alcohol" value="non-alcoholic" required />
             Non-Alcoholic <span class="emoji">👼🏼</span>
           </label>
-          <label class=" description description-3 description-3-thin">
+          <label class="description description-3 description-3-thin">
             <input
               type="radio"
-              name="drink-type"
+              name="alcohol"
               value="optional-alcohol"
               required
             />
@@ -74,7 +91,12 @@
           <label for="glass-type" class="form__label description description-3"
             >What glass do you prefer for it?
           </label>
-          <select id="glass-type" name="glass-type" class="form__input form__input-large" required>
+          <select
+            id="glass-type"
+            name="glass-type"
+            class="form__input form__input-large"
+            required
+          >
             <option value="Highball glass">Highball glass</option>
             <option value="Cocktail glass">Cocktail glass</option>
             <option value="Old-fashioned glass">Old-fashioned glass</option>
@@ -113,7 +135,12 @@
           <label for="drink-type" class="form__label description description-3"
             >Help us classify it:</label
           >
-          <select id="drink-type" class="form__input form__input-large" name="drink-type" required>
+          <select
+            id="drink-type"
+            class="form__input form__input-large"
+            name="drink-type"
+            required
+          >
             <option value="Ordinary Drink">Ordinary Drink</option>
             <option value="Cocktail">Cocktail</option>
             <option value="Shake">Shake</option>
@@ -129,29 +156,49 @@
         </div>
       </div>
       <div class="form__column">
-        <div class="form__group form__group-horisontal form__group-small-input"><form>
-            <label for="ingredient-count" class="form__label description description-3">How many ingredients does it have (up to 15)?</label>
-            <select id="ingredient-count"  class="form__input form__input-small" name="ingredient-count" required>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-              <option value="13">13</option>
-              <option value="14">14</option>
-              <option value="15">15</option>
-            </select>
+        <div class="form__group form__group-horisontal form__group-small-input">
+          <label
+            for="ingredients-count"
+            class="form__label description description-3"
+            >How many ingredients does it have (up to 15)?</label
+          >
+          <select
+            id="ingredients-count"
+            class="form__input form__input-small"
+            name="ingredients-count"
+            required
+          >
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+          </select>
         </div>
-        <div class="form__ingredient-group">
-            <label for="ingredient" class="form__label description description-3 ingredient-label-1">Ingredient:</label>
-            <select id="ingredient" class="form__input ingredient-input-1" name="ingredient" required>
+        <div class="form__ingredients">
+          <!-- <div class="form__ingredient-group">
+            <label
+              for="ingredient"
+              class="form__label description description-3 ingredient-label-1"
+              >Ingredient:</label
+            >
+            <select
+              id="ingredient"
+              class="form__input ingredient-input-1"
+              name="ingredient"
+              required
+            >
               <option value="Añejo rum">Añejo rum</option>
               <option value="Absolut Citron">Absolut Citron</option>
               <option value="Ale">Ale</option>
@@ -276,23 +323,36 @@
               <option value="Woodruff syrup">Woodruff syrup</option>
               <option value="Yoghurt">Yoghurt</option>
             </select>
-            <label for="quantity" class="form__label description description-3  ingredient-label-2">Quantity:</label>
-            <input type="text" class="form__input ingredient-input-2" id="quantity" name="quantity" required />
-            <label for="measurement" class="form__label description description-3  ingredient-label-3">Units:</label>
-            <input type="text" class="form__input ingredient-input-3" id="measurement" name="measurement" required />
+            <label
+              for="quantity"
+              class="form__label description description-3 ingredient-label-2"
+              >Quantity:</label
+            >
+            <input
+              type="text"
+              class="form__input ingredient-input-2"
+              id="quantity"
+              name="quantity"
+              required
+            />
+            <label
+              for="measurement"
+              class="form__label description description-3 ingredient-label-3"
+              >Units:</label
+            >
+            <input
+              type="text"
+              class="form__input ingredient-input-3"
+              id="measurement"
+              name="measurement"
+              required
+            />
+          </div> -->
         </div>
-       
       </div>
     </form>
-    <button type="submit" class="button form__button">
+    <button type="submit" class="button form__button" id="upload-button">
       Add cocktail
     </button>
   </div>
 </div>
-
-
-
-
-
-  
-

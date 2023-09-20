@@ -1,11 +1,24 @@
 import View from "./View.js";
 class PaginationView extends View {
   parentElement = document.querySelector(".pagination__body");
+  constructor() {
+    super();
+    this.currentPage = 1; // Initialize current page
+    this.numbersShown = 5; // Number of pagination numbers to show
+  }
   generateNumbers() {
     const resultsObject = this.data;
     const numPages = this.calculateNumPages(resultsObject);
+    //to be sure first number is never less than 1
+    const startPage = Math.max(
+      1,
+      this.currentPage - Math.floor(this.numbersShown / 2)
+    );
+    //& last number is never more than numPages
+    const endPage = Math.min(numPages, startPage + this.numbersShown - 1);
+
     let paginationLinks = "";
-    for (let i = 1; i <= numPages; i++) {
+    for (let i = startPage; i <= endPage; i++) {
       paginationLinks += this.generatePaginationNumber(
         i,
         resultsObject.currentPage
@@ -65,12 +78,29 @@ class PaginationView extends View {
     `;
   }
   addHandlerClick(handler) {
-    this.parentElement.addEventListener("click", function (event) {
+    this.parentElement.addEventListener("click", (event) => {
       const buttonClicked = event.target.closest(".pagination__button");
       if (!buttonClicked) return;
-      console.log(buttonClicked);
-      const goToPage = +buttonClicked.dataset.page;
-      handler(goToPage);
+
+      const dataPage = +buttonClicked.dataset.page;
+
+      if (buttonClicked.classList.contains("pagination__number")) {
+        // Handle pagination number click
+        this.currentPage = dataPage; // Update current page
+      } else if (buttonClicked.id === "prev-button") {
+        // Handle previous button click
+        if (this.currentPage > 1) {
+          this.currentPage--;
+        }
+      } else if (buttonClicked.id === "next-button") {
+        // Handle next button click
+        const numPages = this.calculateNumPages(this.data);
+        if (this.currentPage < numPages) {
+          this.currentPage++;
+        }
+      }
+
+      handler(this.currentPage);
     });
   }
 }

@@ -5,7 +5,10 @@
   top: 0;
   left: 0;
   background-color: $color-secondary-lighter;
-
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
   // .add__close
 
   &__close {

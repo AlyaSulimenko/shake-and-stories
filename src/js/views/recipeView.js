@@ -7,6 +7,13 @@ class RecipeView extends View {
     window.addEventListener("hashchange", handler);
     //the same on load?
   }
+  addHandlerAddToFavourites(handler) {
+    this.parentElement.addEventListener("click", (event) => {
+      const button = event.target.closest(".recipe__favourite");
+      if (!button) return;
+      handler();
+    });
+  }
   generateIngredientMarkup(ingredients) {
     return ingredients.reduce((acc, ingredient) => {
       return (
@@ -36,11 +43,13 @@ class RecipeView extends View {
 		<h1 class="recipe__title title title-1">
 		  <span>${this.data.name}</span>
 		</h1>
-		<div class="recipe__user-generated">
+		<button class="recipe__favourite">
 		  <svg>
-			 <use href="./img/icons.svg#icon-star-empty"></use>
+			 <use href="./img/icons.svg#icon-star-${
+         this.data.bookmarked ? "full" : "empty"
+       }"></use>
 		  </svg>
-		</div>
+		</button>
 	 </div>
 	 <div class="recipe__details details">
 		<div class="details__item">
